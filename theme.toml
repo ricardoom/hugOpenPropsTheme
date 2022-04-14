@@ -1,0 +1,15 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/gohugoio/hugoThemes#themetoml for an example
+
+name = "NBUBTheme"
+license = "MIT"
+licenselink = "https://github.com/ricardoom/nbubTheme/blob/main/LICENSE"
+description = ""
+homepage = "http://example.com/"
+tags = []
+features = []
+min_version = "0.97.0"
+
+[author]
+  name = "Ricardo E. Galvez"
+  homepage = "https://ricardogalvez.design"
