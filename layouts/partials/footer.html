@@ -1,0 +1,5 @@
+{{ $copyrights := .Site.Copyright | safeHTML  }}
+{{ $author := .Site.Params.author }}
+<footer>
+  <p>&copy; {{ now.Year }} {{ $copyrights }}</p>
+</footer>
