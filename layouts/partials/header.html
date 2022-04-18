@@ -1,0 +1,9 @@
+
+<header id="navigation" class="[ stack ]">
+  <h1>Title / Logo here...</h1>
+  <nav id="nav">
+      {{ range .Site.Menus.main }}
+      <a href="{{ .URL | relURL }}">{{ .Name }}</a>
+      {{ end }}     
+  </nav>
+</header>
