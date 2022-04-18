@@ -1,0 +1,16 @@
+
+
+{{ define "main" }}
+
+  <section class="[ stack ]">
+    <!-- Note that the content for index.html, as a sort of list page, will pull from content/_index.md -->
+    <h1>{{ .Title  }}
+      {{ with .Params.baba }}
+      <span>{{ . }}</span>
+      {{ end }}
+    </h1>
+
+    {{.Content}}
+  </section>
+</main>
+{{ end }}
