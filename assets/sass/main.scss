@@ -6,12 +6,19 @@
 @import 'util/wrapper';
 @import 'util/center';
 // Blocks
+@import 'block/nav';
 // Exceptions
 
 // Typographics
 @import 'typography';
+
+// Some Overrides / Additions to make open props even more flexible:
+:root {
+--measure: 100vw;
+--font-serif: #{$serif};
+}
+
 // Override Open Props
 :where(html) {
   font-family: var(--font-serif);
 }
-
