@@ -1,7 +1,9 @@
 {
   "workbench.colorCustomizations": {
     "titleBar.activeForeground": "#e31ebb",
-    "titleBar.activeBackground": "#2f2b38"
+    "titleBar.inactiveForeground": "#633f5c",
+    "titleBar.activeBackground": "#130d22",
+    "titleBar.inactiveBackground": "#2f2b38",
   },
   "conventionalCommits.scopes": [
     "theme-core"
