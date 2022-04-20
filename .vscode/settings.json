@@ -1,0 +1,9 @@
+{
+  "workbench.colorCustomizations": {
+    "titleBar.activeForeground": "#e31ebb",
+    "titleBar.activeBackground": "#2f2b38"
+  },
+  "conventionalCommits.scopes": [
+    "theme-core"
+  ]
+}
