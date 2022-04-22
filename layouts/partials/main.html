@@ -1,5 +1,14 @@
+{{ if .Site.IsServer }}
+{{ printf "<!-- theme main.html  template -->" | safeHTML }}
+{{ end  }}
 <div class="[ wrapper ]">
   <main class="[ center ][ stack ]">
-    {{ block "main" . }} {{ end }}
+    {{.Content}}
   </main>
+  <aside>
+    <h3>aside here...</h3>
+    {{ block "aside" . }}
+      <h3>default aside...</h3>
+    {{ end }}
+  </aside>
 </div>
