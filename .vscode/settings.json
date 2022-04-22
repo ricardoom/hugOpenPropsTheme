@@ -6,6 +6,7 @@
     "titleBar.inactiveBackground": "#2f2b38",
   },
   "conventionalCommits.scopes": [
-    "theme-core"
+    "theme-core",
+    "wip"
   ]
 }
