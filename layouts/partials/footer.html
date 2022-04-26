@@ -1,5 +1,7 @@
 {{ $copyrights := .Site.Copyright | safeHTML  }}
 {{ $author := .Site.Params.author }}
-<footer>
-  <p>&copy; {{ now.Year }} {{ $copyrights }}</p>
-</footer>
+<div class="[ wrapper ]">
+  <footer class="[ center ][ stack ]">
+    <p>&copy; {{ now.Year }} {{ $copyrights }}</p>
+  </footer>
+</div>
