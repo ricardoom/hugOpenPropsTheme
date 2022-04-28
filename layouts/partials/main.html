@@ -1,14 +1,19 @@
+{{ $pageContext := "interior" }}
+{{ if .IsHome }}
+  {{ $pageContext = "home" }}
+{{ end }}
 {{ if .Site.IsServer }}
-{{ printf "<!-- theme main.html  template -->" | safeHTML }}
+{{ printf "<!-- theme main.html template -->" | safeHTML }}
 {{ end  }}
-<div class="[ wrapper ]">
-  <main class="[ center ][ stack ]">
-    {{.Content}}
-  </main>
+<main class="[ wrapper ]">
+  <div class="[ stack ][ center ][ {{ $pageContext }} ]">
+    {{ .Content }}
   <aside>
     <h3>aside here...</h3>
     {{ block "aside" . }}
       <h3>default aside...</h3>
     {{ end }}
   </aside>
-</div>
+  </div>
+  
+</main>

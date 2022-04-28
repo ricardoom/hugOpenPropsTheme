@@ -2,9 +2,12 @@
 {{ if .IsHome }}
   {{ $headerContext = "home" }}
 {{ end }}
-<div class="[ wrapper ]">
-  <header id="navigation" class="[ center ][ stack ][ {{ $headerContext }} ]">
-    <h1>{{ .Site.Title }}</h1>
+<header class="[ wrapper ][ center ][ {{ $headerContext }} ]">
+  <div class="[ center ][ stack ]">
+    <h1>
+      {{ .Site.Title }}
+      <span class="[ subtitle ]">{{ .Site.Params.subtitle }}</span>
+    </h1>
     {{ if .Site.Menus.main  }}
     <nav id="nav">
         {{ range .Site.Menus.main }}
@@ -12,5 +15,5 @@
         {{ end }}
     </nav>
     {{ end }}
-  </header>
-</div>
+  </div>
+</header>

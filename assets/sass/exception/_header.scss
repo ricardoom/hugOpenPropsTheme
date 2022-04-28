@@ -1,0 +1,15 @@
+// Home page only
+// TODO: apply this at the template level only;
+
+
+//   :is(.wrapper) header, footer {
+//   padding: 4rem;
+// }
+
+.home {
+  padding-block: 10rem;
+
+ :where(h1) {
+    max-inline-size: calc(var(--size-header-1) / 1.75);
+  }
+}
