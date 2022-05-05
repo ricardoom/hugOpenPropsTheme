@@ -1,5 +1,8 @@
 // CUBE Methodology
 
+// Typographics
+@import 'typography';
+
 // Composition
 @import 'compose/stack';
 // Utility
@@ -12,9 +15,6 @@
 // Exceptions
 @import 'exception/mast';
 @import 'exception/header';
-
-// Typographics
-@import 'typography';
 
 // Some Overrides / Additions to make open props even more flexible:
 :root {

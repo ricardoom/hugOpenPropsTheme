@@ -1,6 +1,6 @@
 // Home page only
 // TODO: apply this at the template level only;
-
+// TODO: figure out how to decouple project styles from theme styles
 
 //   :is(.wrapper) header, footer {
 //   padding: 4rem;
@@ -12,4 +12,16 @@
  :where(h1) {
     max-inline-size: calc(var(--size-header-1) / 1.75);
   }
+}
+
+.lasttitle {
+  font-family: $lapture-regular;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.subtitle {
+  font-family: $franklin;
+  font-style: normal;
+  // font-weight: var(--font-weight-5);
 }
