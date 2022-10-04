@@ -5,9 +5,18 @@
 //   :is(.wrapper) header, footer {
 //   padding: 4rem;
 // }
+header {
+  display: flex;
+  // height: var(--space-s-m);
+  flex-direction: row;
+  justify-content: space-between;
+  padding-inline-end: 54px;
+  padding-inline-start: 54px;
+}
 
 .home {
-  padding-block: 10rem;
+  padding-block-start: var(--space-s-m);
+  padding-block-end: var(--space-s-m);
 
  :where(h1) {
     max-inline-size: calc(var(--size-header-1) / 1.75);
@@ -15,13 +24,39 @@
 }
 
 .lasttitle {
-  font-family: $lapture-regular;
+  font-family: $gomme;
   font-weight: 100;
   font-style: normal;
 }
 
 .subtitle {
-  font-family: $franklin;
+  font-family: $capitolina;
   font-style: normal;
-  // font-weight: var(--font-weight-5);
+  font-weight: 700;
+  line-height: 94%;
+}
+
+
+:where(svg) {
+  stroke: none;
+  fill: initial;
+}
+
+
+// Social media icons
+nav {
+  svg {
+    height: var(--space-xs-s);
+  }
+}
+
+// Main Logo in header
+.primary-logo-nav {
+  display: flex;
+  flex-direction: row;
+
+  .logo-main {
+    width: 161px;
+    height: 56px;
+  }
 }

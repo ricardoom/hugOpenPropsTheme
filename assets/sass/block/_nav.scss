@@ -1,4 +1,6 @@
 nav {
   display: flex;
+  font-family: $gomme;
+  font-size: var(--space-xs);
   justify-content: start;
 }
