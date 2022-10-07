@@ -3,4 +3,21 @@ nav {
   font-family: $gomme;
   font-size: var(--space-xs);
   justify-content: start;
+
+  // These rules handle the top navigation for both large and small screens
+  // Mobile & Desktop as it were...
+  // TODO: Use container queries instead of break points
+  &.large {
+    @media screen and (min-width: 414px) {
+      display: none;
+    }
+  }
+  
+  &.small {
+    @media screen and (max-width: 415px) {
+      display: none;
+    }
+    display: flex;
+  }
 }
+// TODO: gather different styles based on screen size under respective classes

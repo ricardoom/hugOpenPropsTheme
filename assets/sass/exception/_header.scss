@@ -10,14 +10,13 @@ header {
   // height: var(--space-s-m);
   flex-direction: row;
   justify-content: space-between;
-  padding-inline-end: 54px;
-  padding-inline-start: 54px;
+  padding-block-start: var(--space-m, 27px);
+  padding-block-end: var(--space-m, 27px);
+  padding-inline-end: var(--space-s, 18px);
+  padding-inline-start: var(--space-s, 18px);
 }
 
 .home {
-  padding-block-start: var(--space-s-m);
-  padding-block-end: var(--space-s-m);
-
  :where(h1) {
     max-inline-size: calc(var(--size-header-1) / 1.75);
   }
