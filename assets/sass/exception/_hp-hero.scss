@@ -1,4 +1,14 @@
+// Home Page Hero Rules
+//
+$heroImage: "https://res.cloudinary.com/toupeeproofbullets/image/upload/t_porfolio_hero_1280_1x/v1665187201/native%20bound%20unbound/segesser_hide.jpg";
+
+
 .hp-hero {
+  --heroImage: url(#{$heroImage});
   background-color: $midnight-blue;
-  background-image: url("../images/segesser_hide.jpg");
+  background-image: var(--heroImage);
+  background-size: cover;
+  width: 100vw;
+  height: auto;
+  aspect-ratio: 16/9;
 }
