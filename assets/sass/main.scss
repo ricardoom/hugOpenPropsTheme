@@ -31,5 +31,8 @@
 
 // Override Open Props
 :where(html) {
+  background-color: $midnight-blue;
   font-family: var(--font-serif);
 }
+
+// TODO: Set up prefers Color Scheme Media Queries aqui!!!

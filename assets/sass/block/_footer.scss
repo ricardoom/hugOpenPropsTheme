@@ -1,3 +1,21 @@
 footer {
   padding-block: var(--space-m, 10rem);
+
+  .decor {
+    background-color: red;
+    border-radius: 50% 50%;
+    border: 2px solid $midnight-blue;
+    width: 144px;
+    height: 144px;
+  }
+
+  nav { 
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.logo-main {
+  width: 347px;
+  height: 189.63px;
 }
