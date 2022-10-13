@@ -2,8 +2,9 @@
   --large-screen: 768px;
   --small-screen: 767px;
   @media screen and (max-width: 767px) {
+    padding-block-start: var(--space-m);
     padding-inline-end: var(--space-s-m, 21px);
-    padding-inline-start: var(--space-s-m, 21px);
+    padding-inline-start: var(--space-m, 21px);
     width: 19.125rem;
   }
   
