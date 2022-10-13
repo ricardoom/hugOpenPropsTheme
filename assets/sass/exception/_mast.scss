@@ -1,11 +1,11 @@
 .mast-head {
-  --large-screen: 768px;
+  --large-screen: 47.9375;
   --small-screen: 767px;
   @media screen and (max-width: 767px) {
-    padding-block-start: var(--space-m);
-    padding-inline-end: var(--space-s-m, 21px);
-    padding-inline-start: var(--space-m, 21px);
-    width: 19.125rem;
+    margin-block-end: 21.0625em;
+    padding-block-start: var(--space-xl, 54px);
+    padding-inline-end: var(--space-xl, 54px);
+    padding-inline-start: var(--space-xl, 54px);
   }
   
   @media screen and (min-width: 768px) {

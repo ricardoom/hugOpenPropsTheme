@@ -5,10 +5,6 @@ $serif: Cambria, 'Liberation Serif', Times, Utopia, 'Hoefler Text', 'Nimbus Roma
 
 $slab-serif: 'Rockwell', 'Rockwell Extra Bold', 'Courier New', Monoco, Courier, monospace;
 
-// $lapture: 'jaf-lapture-display', $slab-serif;
-// $lapture-regular: 'jaf-lapture', $slab-serif;
-// $lemond: 'lemonde-journal', $serif;
-// $franklin: 'franklin-gothic-urw', $sans-serif;
 $capitolina: 'capitolina', $serif;
 $gomme: 'gomme-sans', $sans-serif;
 
@@ -106,6 +102,10 @@ p {
   line-height: 1.2;
   padding-inline-end: var(--space-s);
   padding-inline-start: var(--space-s);
+}
+
+.home p {
+  text-shadow: 1px 1px 1px #333 ;
 }
 
 .lasttitle {
