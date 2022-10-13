@@ -88,4 +88,43 @@ $gomme: 'gomme-sans', $sans-serif;
     ((var(--f-5-min) / 16) * 1rem) + (var(--f-5-max) - var(--f-5-min)) *
       var(--fluid-bp)
   );
+
+  font-family: $capitolina;
 }
+
+h1 { // TODO: use sass map to generate all the titles
+  font-size: var(--step-4);
+}
+
+nav { // Type rules only! See the _nav.scss for layout
+  font-family: $gomme;
+  font-size: var(--space-xs);
+}
+
+p {
+  font-size: var(--step-1);
+  line-height: 1.2;
+  padding-inline-end: var(--space-s);
+  padding-inline-start: var(--space-s);
+}
+
+.lasttitle {
+  font-family: $gomme;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.subtitle {
+  color: $pale-sun;
+  display: block;
+  font-size:var(--step-0);
+  font-style:normal;
+  font-weight:700;
+  line-height:94%;
+  //width: auto;
+  padding: 1em 1em 3em 6em;
+}
+
+
+
+ 
