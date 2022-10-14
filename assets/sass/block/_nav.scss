@@ -1,5 +1,7 @@
 nav {
-  display: flex;
+  // !Hidden Nav until further pages are developed
+  align-items: center;
+  display: flex; 
   justify-content: start;
 
   // These rules handle the top navigation for both large and small screens
@@ -19,3 +21,16 @@ nav {
   }
 }
 // TODO: gather different styles based on screen size under respective classes
+
+.nav-primary {
+  display: none;
+}
+
+.nav-social-media {
+  justify-content: init;
+  svg {
+    height: var(--space-m-l);
+    margin-inline-start: var(--space-m);
+    width: auto;
+  }
+}

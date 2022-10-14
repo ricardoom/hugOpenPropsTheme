@@ -6,6 +6,11 @@
     padding-block-start: var(--space-xl, 54px);
     padding-inline-end: var(--space-xl, 54px);
     padding-inline-start: var(--space-xl, 54px);
+
+    svg {
+      width: calc(100vw - 10px);
+      height: auto;
+    }
   }
   
   @media screen and (min-width: 48rem) {
