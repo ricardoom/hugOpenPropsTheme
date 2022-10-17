@@ -1,8 +1,14 @@
 .mast-head {
   --large-screen: 48rem;
   --small-screen: 767px;
+  --logo-left: 50rem;
+
+  .subtitle {
+    display: block;
+  }
+
   @media screen and (max-width: 47.9375rem) {
-    margin-block-end: 21.0625em;
+    margin-block-end: 10rem;
     padding-block-start: var(--space-xl, 54px);
     // padding-inline-end: var(--space-xl, 54px);
     // padding-inline-start: var(--space-xl, 54px);
@@ -17,13 +23,20 @@
 
     .subtitle {
       --st-align: calc(var(--space-3xl) * 1.7);
-      display: block;
       padding: 1em 1em 3em var(--st-align);
     }
   }
   
   @media screen and (min-width: 48rem) {
+    margin-block-end: 10rem;
+    margin-block-start: 21.875rem;
     padding: initial;
-    width: 29.6875rem;
+    // width: 29.6875rem;
+    // width: var(--large-screen);
+
+    svg {
+      // width: auto;
+      width: 474px;
+    }
   }
 }

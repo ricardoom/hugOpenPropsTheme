@@ -35,8 +35,11 @@ nav {
 
   svg {
     fill: $midnight-blue;
-    height: var(--space-m-l);
-    // margin-inline-start: var(--space-m);
+    height: var(--size-6);
     width: auto;
+
+    @media screen and (min-width: 48rem) {
+      
+    }
   }
 }

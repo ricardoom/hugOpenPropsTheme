@@ -1,4 +1,6 @@
 .inner-grid {
-  // display: grid;
-  // grid: auto-flow / auto-flow;
+  @media screen and (min-width: 48rem) {
+    width: calc(var(--space-3xl) * 3.5);  
+    margin-inline-start: calc(var(--space-3xl) * 2);
+  }
 }

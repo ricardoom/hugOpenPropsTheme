@@ -6,9 +6,16 @@ $heroImage: "https://res.cloudinary.com/toupeeproofbullets/image/upload/t_porfol
 main {
   --heroImage: url(#{$heroImage});
   --top: -1%;
-  --bottom: 23%;
+  --bottom: 40%;
   background-color: $midnight-blue;
-  background-image: linear-gradient($midnight-blue var(--top) , transparentize($midnight-blue, 0.75), $midnight-blue var(--bottom)),var(--heroImage), ;
+  background-image: linear-gradient($midnight-blue var(--top) , transparentize($midnight-blue, 0.75), $midnight-blue var(--bottom)),var(--heroImage);
   background-repeat: no-repeat;
-  // background-size: auto 1000px;
+  
+  @media screen and (max-width: 47.9375rem) {
+    background-size: auto;
+  }
+  @media screen and (min-width: 47.9375rem) {
+    --bottom: 24%;
+    background-size: contain;
+  }
 }
