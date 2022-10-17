@@ -5,10 +5,10 @@ $heroImage: "https://res.cloudinary.com/toupeeproofbullets/image/upload/t_porfol
 
 main {
   --heroImage: url(#{$heroImage});
-  --top: -10%;
-  --bottom: 85%;
+  --top: -1%;
+  --bottom: 23%;
   background-color: $midnight-blue;
   background-image: linear-gradient($midnight-blue var(--top) , transparentize($midnight-blue, 0.75), $midnight-blue var(--bottom)),var(--heroImage), ;
   background-repeat: no-repeat;
-  background-size: auto 1000px;
+  // background-size: auto 1000px;
 }
