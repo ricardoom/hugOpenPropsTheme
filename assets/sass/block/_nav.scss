@@ -27,10 +27,16 @@ nav {
 }
 
 .nav-social-media {
-  justify-content: init;
+  // justify-content: init;
+  gap: var(--space-xs-s);
+  a {
+    display: block;
+  }
+
   svg {
+    fill: $midnight-blue;
     height: var(--space-m-l);
-    margin-inline-start: var(--space-m);
+    // margin-inline-start: var(--space-m);
     width: auto;
   }
 }
