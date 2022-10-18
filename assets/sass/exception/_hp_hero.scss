@@ -10,12 +10,13 @@ main {
   background-color: $midnight-blue;
   background-image: linear-gradient($midnight-blue var(--top) , transparentize($midnight-blue, 0.75), $midnight-blue var(--bottom)),var(--heroImage);
   background-repeat: no-repeat;
+  background-size: contain;
   
   @media screen and (max-width: 47.9375rem) {
     background-size: auto;
   }
-  @media screen and (min-width: 47.9375rem) {
-    --bottom: 24%;
-    background-size: contain;
-  }
+  // @media screen and (min-width: 48rem) {
+  //   --bottom: 40%;
+  //   background-size: contain;
+  // }
 }

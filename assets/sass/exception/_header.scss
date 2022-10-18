@@ -7,7 +7,6 @@
 // }
 header {
   display: flex;
-  // height: var(--space-s-m);
   flex-direction: row;
   justify-content: space-between;
   padding-block-start: var(--space-m, 27px);
@@ -22,13 +21,10 @@ header {
   }
 }
 
-
-
 :where(svg) {
   stroke: none;
   fill: initial;
 }
-
 
 // Social media icons
 nav {
@@ -45,5 +41,11 @@ nav {
   .logo-main {
     width: 161px;
     height: 56px;
+  }
+
+  @media screen and (max-width: 47.9375rem) {
+    .pale-sun-type {
+      display: none;
+    }
   }
 }

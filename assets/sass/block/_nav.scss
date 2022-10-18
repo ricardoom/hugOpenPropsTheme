@@ -7,6 +7,7 @@ nav {
   // These rules handle the top navigation for both large and small screens
   // Mobile & Desktop as it were...
   // TODO: Use container queries instead of break points
+
   &.large {
     @media screen and (min-width: 414px) {
       display: none;
@@ -27,8 +28,8 @@ nav {
 }
 
 .nav-social-media {
-  // justify-content: init;
   gap: var(--space-xs-s);
+
   a {
     display: block;
   }
@@ -37,9 +38,6 @@ nav {
     fill: $midnight-blue;
     height: var(--size-6);
     width: auto;
-
-    @media screen and (min-width: 48rem) {
-      
-    }
+    // @media screen and (min-width: 48rem) { }
   }
 }

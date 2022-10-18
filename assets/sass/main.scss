@@ -34,6 +34,7 @@
 
 // Override Open Props
 :where(html) {
+  color: $pale-sun;
   background-color: $midnight-blue;
   font-family: var(--font-serif);
 }

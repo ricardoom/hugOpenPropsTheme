@@ -2,7 +2,7 @@
   --large-screen: 48rem;
   --small-screen: 767px;
   --logo-left: 50rem;
-
+  --st-align: calc(var(--space-3xl) * 1.7);
   .subtitle {
     display: block;
   }
@@ -37,6 +37,11 @@
     svg {
       // width: auto;
       width: 474px;
+    }
+
+    .subtitle {
+      --st-align: calc(var(--space-3xl) * 1.20);
+      padding: 1em 1em 3em var(--st-align);
     }
   }
 }
