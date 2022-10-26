@@ -23,15 +23,39 @@ footer {
   }
 }
 
-.logo-main {
-  width: 347px;
-  height: 189.63px;
+
+.logo-kinetic {
+  .type {
+    fill: var(--logo-type);
+  }
+
+  .mark {
+    fill: var(--logo-mark);
+  }
 }
 
+
+.logo-main {
+  width: 145px;
+  height: auto;
+
+  // Breakpoints
+  @media screen and (min-width: 414px) {
+    width: 347px;
+    height: 189.63px;  
+  }  
+}
+
+.logo-kinetic {
+  height: auto;
+  width: initial;
+}
+
+// Uses same color set, but reduces size of logo
 .colophon {
-  svg {
-    width: 9.0625rem;
-  }
+  // svg {
+  //   width: 9.0625rem;
+  // }
   p {
     font-family: $gomme;
     font-size: $step--1;

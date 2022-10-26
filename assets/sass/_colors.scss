@@ -4,3 +4,53 @@ $midnight-blue: hsla(229, 18%, 12%, 1);
 
 $pale-sun: hsla(43, 89%, 93%, 1);
 
+$squid-ink-black: hsla(0, 0%, 8%, 1);
+
+$raw-sienna: hsla(21, 64%, 38%, 1);
+
+$nm-teal: hsla(189, 48%, 42%, 1);
+
+$nm-dark-teal: hsla(191, 61%, 20%, 1);
+
+$bright-white: hsla(0, 0%, 100%, 1);
+
+//TODO: Set up a more complete color set
+//TODO: Explore / Consider eliminating Sass Vars, favoring CSS Cust. Props instead...Reason: less typing.
+
+html {
+  // Dark Theme / OS Setting
+
+  --brand-dark: #{$midnight-blue};
+  --text1-dark: #{$pale-sun};
+  --logo-type-dark: #{$bright-white};
+  --logo-mark-dark: #{$nm-teal};
+
+  // Light Theme / OS Setting
+
+  --brand-light: #{$bright-white};
+  --brand-accent-light: #{$raw-sienna};
+  --brand-accent-highlight: #{$pale-sun};
+  --text1-light: #{$midnight-blue};
+  --logo-type-light: #{$nm-dark-teal};
+  --logo-mark-light: #{$raw-sienna};
+}
+
+:root {
+  --brand-background: var(--brand-light);
+  --brand: var(--brand-light);
+  --highlight: var(--brand-accent-highlight);
+  --text1: var(--text1-light);
+  --logo-type: var(--logo-type-light);
+  --logo-mark: var(--logo-mark-light);
+}
+
+@media (prefers-color-scheme: dark) {
+:root {
+  --brand-background: var(--brand-dark);
+  --brand: var(--brand-dark);
+  --highlight: var(--brand-accent-highlight);
+  --text1: var(--text1-dark);
+  --logo-type: var(--logo-type-dark);
+  --logo-mark: var(--logo-mark-dark);
+  }
+}

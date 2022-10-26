@@ -3,6 +3,13 @@
   --small-screen: 767px;
   --logo-left: 50rem;
   --st-align: calc(var(--space-3xl) * 1.7);
+   .logo-main {
+      .type,
+      .mark {
+        fill: var(--text1);
+    }
+  }
+  
   .subtitle {
     display: block;
   }
@@ -10,8 +17,6 @@
   @media screen and (max-width: 47.9375rem) {
     margin-block-end: 10rem;
     padding-block-start: var(--space-xl, 54px);
-    // padding-inline-end: var(--space-xl, 54px);
-    // padding-inline-start: var(--space-xl, 54px);
 
     svg {
       height: auto;
@@ -31,17 +36,23 @@
     margin-block-end: 10rem;
     margin-block-start: 21.875rem;
     padding: initial;
-    // width: 29.6875rem;
-    // width: var(--large-screen);
 
     svg {
-      // width: auto;
       width: 474px;
     }
 
     .subtitle {
-      --st-align: calc(var(--space-3xl) * 1.20);
-      padding: 1em 1em 3em var(--st-align);
+      --st-align: calc(var(--space-3xl));
+      // padding: 1em 1em 3em var(--st-align);
+      padding-block-end: 0;
+      padding-block-start: 1rem;
+      padding-inline-end: 1rem;
+      padding-inline-start: var(--st-align);
     }
   }
 }
+
+
+
+
+// lilou 400 oscar tj papa ricardo

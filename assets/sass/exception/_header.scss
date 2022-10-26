@@ -26,6 +26,17 @@ header {
   fill: initial;
 }
 
+.logo-main {
+  .type {
+    fill: var(--logo-type);
+  }
+
+  .mark {
+    fill: var(--logo-mark);
+  }
+}
+
+
 // Social media icons
 nav {
   svg {
