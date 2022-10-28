@@ -26,6 +26,21 @@ header {
   fill: initial;
 }
 
+// @media (prefers-color-scheme: light) {
+  .logo-dark {
+    display: none;
+  }
+// }
+
+@media (prefers-color-scheme: dark) {
+  .logo-light {
+    display: none;
+  }
+  .logo-dark {
+    display: initial;
+  }
+}
+
 .logo-main {
   .type {
     fill: var(--logo-type);
@@ -49,7 +64,8 @@ nav {
   display: flex;
   flex-direction: row;
 
-  .logo-main {
+  .logo-main
+   {
     width: 161px;
     height: 56px;
   }
