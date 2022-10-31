@@ -1,12 +1,14 @@
 $step--1: var(--step--1);
 
 .footer {
+  flex-direction: row;
+  justify-content: space-between;
   padding-block-start: 14.0625rem;
   padding-block-end: var(--space-m, 10rem);
   padding-inline: var(--space-m);
 
-  @media screen and (min-width: 414px) {
-    flex-direction: row;
+  @media screen and (max-width: 47.9375rem) {
+    flex-direction: column;
     justify-content: space-between;
   }
   
