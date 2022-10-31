@@ -42,6 +42,7 @@ html {
   --text1: var(--text1-light);
   --logo-type: var(--logo-type-light);
   --logo-mark: var(--logo-mark-light);
+  --social-media-logo: var(--brand-dark);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -52,5 +53,6 @@ html {
   --text1: var(--text1-dark);
   --logo-type: var(--logo-type-dark);
   --logo-mark: var(--logo-mark-dark);
+  --social-media-logo: var(--brand-light);
   }
 }

@@ -35,9 +35,10 @@ nav {
   }
 
   svg {
-    fill: $midnight-blue;
+    fill: var(--brand-background);
     height: var(--size-6);
+    stroke: var(--social-media-logo);
     width: auto;
-    // @media screen and (min-width: 48rem) { }
+    
   }
 }

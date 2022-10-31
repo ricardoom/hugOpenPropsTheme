@@ -29,7 +29,8 @@ $step--1: var(--step--1);
 }
 
 
-.logo-kinetic-primary {
+.logo-kinetic-solid,
+.logo-kinetic-knockout {
   width: 145px;
   height: auto;
 
@@ -47,17 +48,29 @@ $step--1: var(--step--1);
   }
 }
 
+.logo-kinetic-knockout {
+  display: none;
+}
 
-.logo-main {
+@media (prefers-color-scheme: dark) {
+  .logo-kinetic-solid {
+    display: none;
+  }
+  .logo-kinetic-knockout {
+    display: initial;
+  }
+}
+
+// .logo-main {
   
 
-  // Breakpoints
+//   // Breakpoints
    
-}
+// }
 
-.logo-kinetic {
+// .logo-kinetic {
  
-}
+// }
 
 // Uses same color set, but reduces size of logo
 .colophon {

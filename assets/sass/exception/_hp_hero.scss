@@ -11,11 +11,13 @@ main {
   --heroImage: url(#{$heroImage});
   --top: -1%;
   --bottom: 30%;
+
   // Special case where we need to get a transparent version of midnight blue instead of letting Sass do it for us.
   // TODO: figure out why using Sass's transparentize func. didn't work w/ css custom property.
   
 
   // Big Override here: Need to match the design more carefully so we need to have very specific light and dark media queries here:
+  
   @media (prefers-color-scheme: light) {
     --top: 10%;
     --bottom: 10%;
@@ -29,7 +31,7 @@ main {
   
   
   @media (prefers-color-scheme: dark) {
-    --brand-gradient: var(--midnight-blue);
+    --brand-gradient: var(--midnight-blue-dark-theme);
     background-color: var(--brand-background);
     background-image: linear-gradient(var(--brand-background) var(--top),var(--brand-gradient), var(--brand-background) var(--bottom)), var(--heroImage);
     background-repeat: no-repeat;
