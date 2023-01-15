@@ -1,0 +1,49 @@
+// Buttons 
+// Basic Layout 
+
+// Large
+button {
+  border-radius: 4px;
+  border-style: solid;
+  background-color: var(--some-bg);
+  padding-block-end: 18px;
+  padding-block-start: 18px;
+  padding-inline-end: 36px;
+  padding-inline-start: 36px;
+
+  :focus {
+    // outline-color: var(--focus-border-color);
+    outline-width: 4px;
+  }
+}
+
+
+
+:root {
+  --button-bg-color: #{$midnight-blue};
+  --button-text-color: #{$pale-sun};
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --button-bg-color: #{$pale-sandstone};
+    --button-text-color: #{$midnight-blue};
+  };
+
+  button {
+    background: var(--button-bg-color);
+    color: var(--button-text-color);
+  };
+};
+
+// Icons
+// Small
+// Icons
+
+// Outliers and Exceptions
+
+// Button Styles
+
+
+
+

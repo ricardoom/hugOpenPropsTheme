@@ -14,10 +14,21 @@ $nm-dark-teal: hsla(191, 61%, 20%, 1);
 
 $bright-white: hsla(0, 0%, 100%, 1);
 
+$dark-sandstone: hsla(34, 30%, 64%, 1);
+
+$pale-sandstone: hsla(34, 30%, 90%, 1);
+
+
+$focus: hsla(216, 99%, 55%, 1);
+
 //TODO: Set up a more complete color set
 //TODO: Explore / Consider eliminating Sass Vars, favoring CSS Cust. Props instead...Reason: less typing.
 
+//Note: See _buttons.scss for styles pertaining to... buttons.
+
 html {
+  // Theme Agnostic Colors
+  --focus-border-color: #{$focus};
   // Dark Theme / OS Setting
 
   --brand-dark: #{$midnight-blue};
@@ -33,6 +44,10 @@ html {
   --text1-light: #{$midnight-blue};
   --logo-type-light: #{$raw-sienna};
   --logo-mark-light: #{$nm-dark-teal};
+
+  :focus {
+    outline-color: var(--focus-border-color);
+  }
 }
 
 :root {
