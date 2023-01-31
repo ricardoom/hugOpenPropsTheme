@@ -6,7 +6,8 @@ $heroImage: "https://res.cloudinary.com/toupeeproofbullets/image/upload/t_porfol
 main {
   --midnight-blue-dark-theme: hsla(229, 18%, 12%, 0.25);
   --midnight-blue-light-theme: hsla(229, 18%, 12%, 0.05);
-  --bright-white: hsla(0, 0%, 100%, 0.05);
+  --bright-white-light-theme: hsla(0, 0%, 100%, 0.05);
+  // --bright-white: hsla(0, 0%, 100%, 0.25);
   --brand-gradient: var(--midnight-blue-light-theme);  
   --heroImage: url(#{$heroImage});
   --top: -1%;
@@ -19,11 +20,20 @@ main {
   // Big Override here: Need to match the design more carefully so we need to have very specific light and dark media queries here:
   
   @media (prefers-color-scheme: light) {
-    --top: 10%;
-    --bottom: 10%;
-    --brand-background: var(--bright-white);
+    --top: 0%;
+    --middle-top: 0%;
+    --middle-bottom: 30%;
+    --bottom: 100%;
+    // --brand-background: var(--bright-white);
+    --brand-gradient: var(--bright-white-light-theme);
     background-color: var(--brand-background);
-    background-image: linear-gradient(var(--brand-background) var(--top),var(--brand-gradient), var(--brand-background) var(--bottom)), var(--heroImage);
+    background-image: linear-gradient(
+      var(--brand-background) var(--top),
+      var(--brand-background) var(--middle-top), 
+      transparent 0% 20%,
+      var(--brand-background) var(--middle-bottom),
+      var(--brand-background) var(--bottom)),
+      var(--heroImage);
     background-repeat: no-repeat;
     background-size: contain;
   }

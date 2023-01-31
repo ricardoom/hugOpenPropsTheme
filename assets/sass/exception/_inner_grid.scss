@@ -4,7 +4,7 @@
   }
 
   @media screen and (min-width: 48rem) {
-    background-image: linear-gradient(transparent 9%, var(--brand-light) 9%);
+    background: radial-gradient(at 50% 65%, hsl(0, 0%, 100%), 30%, hsla(0, 0%, 100%, 0));
     @media (prefers-color-scheme: dark) {
       background-image: none;
     }
