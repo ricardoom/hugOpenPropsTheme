@@ -11,7 +11,7 @@ $step--1: var(--step--1);
     flex-direction: column;
     justify-content: space-between;
   }
-  
+
   .decor {
     background-color: red;
     border-radius: 50% 50%;
@@ -38,9 +38,9 @@ $step--1: var(--step--1);
 
   @media screen and (min-width: 414px) {
     width: 347px;
-    height: auto;  
+    height: auto;
   }
- 
+
   .type {
     fill: var(--logo-type);
   }
@@ -50,33 +50,27 @@ $step--1: var(--step--1);
   }
 }
 
-.logo-kinetic-knockout {
+.logo-kinetic-solid {
   display: none;
 }
-
-@media (prefers-color-scheme: dark) {
-  .logo-kinetic-solid {
-    display: none;
-  }
-  .logo-kinetic-knockout {
-    display: initial;
-  }
+.logo-kinetic-knockout {
+  display: initial;
 }
 
 // .logo-main {
-  
+
 
 //   // Breakpoints
-   
+
 // }
 
 // .logo-kinetic {
- 
+
 // }
 
 // Uses same color set, but reduces size of logo
 .colophon {
-  
+
   // svg {
   //   width: 9.0625rem;
   // }
@@ -86,5 +80,5 @@ $step--1: var(--step--1);
     margin-block-start: var(--space-m);
     padding-inline-start: 0;
   }
-  
+
 }

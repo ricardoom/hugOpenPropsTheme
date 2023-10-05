@@ -1,5 +1,5 @@
-// Buttons 
-// Basic Layout 
+// Buttons
+// Basic Layout
 
 // Large
 button {
@@ -12,7 +12,6 @@ button {
   padding-inline-start: 36px;
 
   :focus {
-    // outline-color: var(--focus-border-color);
     outline-width: 4px;
   }
 }
@@ -20,20 +19,13 @@ button {
 
 
 :root {
-  --button-bg-color: #{$midnight-blue};
-  --button-text-color: #{$pale-sun};
-}
+  --button-bg-color: #{$pale-sandstone};
+  --button-text-color: #{$midnight-blue};
+};
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --button-bg-color: #{$pale-sandstone};
-    --button-text-color: #{$midnight-blue};
-  };
-
-  button {
-    background: var(--button-bg-color);
-    color: var(--button-text-color);
-  };
+button {
+  background: var(--button-bg-color);
+  color: var(--button-text-color);
 };
 
 // Icons

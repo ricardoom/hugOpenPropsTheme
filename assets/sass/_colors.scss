@@ -51,17 +51,6 @@ html {
 }
 
 :root {
-  --brand-background: var(--brand-light);
-  --brand: var(--brand-light);
-  --highlight: var(--brand-accent-highlight);
-  --text1: var(--text1-light);
-  --logo-type: var(--logo-type-light);
-  --logo-mark: var(--logo-mark-light);
-  --social-media-logo: var(--brand-dark);
-}
-
-@media (prefers-color-scheme: dark) {
-:root {
   --brand-background: var(--brand-dark);
   --brand: var(--brand-dark);
   --highlight: var(--brand-accent-highlight);
@@ -69,5 +58,4 @@ html {
   --logo-type: var(--logo-type-dark);
   --logo-mark: var(--logo-mark-dark);
   --social-media-logo: var(--brand-light);
-  }
 }

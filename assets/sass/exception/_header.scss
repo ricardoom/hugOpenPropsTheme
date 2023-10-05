@@ -26,19 +26,12 @@ header {
   fill: initial;
 }
 
-// @media (prefers-color-scheme: light) {
-  .logo-dark {
-    display: none;
-  }
-// }
+.logo-light {
+  display: none;
+}
 
-@media (prefers-color-scheme: dark) {
-  .logo-light {
-    display: none;
-  }
-  .logo-dark {
-    display: initial;
-  }
+.logo-dark {
+  display: initial;
 }
 
 .logo-main {

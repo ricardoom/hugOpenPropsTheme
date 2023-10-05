@@ -6,19 +6,14 @@
   --small-screen: 767px;
   --logo-left: 50rem;
   --st-align: calc(var(--space-3xl) * 1.7);
-   
+
   .logo-main {
       .type,
       .mark {
         fill: var(--text1);
-
-        @media screen and (max-width: 47.9375rem) and (prefers-color-scheme: light) {
-          --text1: var(--brand);
-          filter: drop-shadow(1px 1px 5px var(--brand-dark));
-        }
     }
   }
-  
+
   .subtitle {
     display: block;
   }
@@ -38,14 +33,9 @@
     .subtitle {
       --st-align: calc(var(--space-3xl) * 1.7);
       padding: 1em 1em 3em var(--st-align);
-
-      @media screen and (max-width: 47.9375rem) and (prefers-color-scheme: light) {
-        --text1: var(--brand);
-        filter: drop-shadow(1px 1px 5px var(--brand-dark));
-      }
     }
   }
-  
+
   @media screen and (min-width: 48rem) {
     --top-spacing: 35.875rem;
     margin-block-end: 10rem;
