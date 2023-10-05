@@ -38,8 +38,8 @@
 
   @media screen and (min-width: 48rem) {
     margin-block-end: 10rem;
-    // margin-block-start: 21.875rem;
-    margin-block-start: var(--top-spacing);
+    margin-block-start: 21.875rem;
+    // margin-block-start: var(--top-spacing);
     padding: initial;
 
     svg {
